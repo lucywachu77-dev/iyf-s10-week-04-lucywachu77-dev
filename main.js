@@ -1,7 +1,6 @@
 // =========================
 // WEEK 4 JAVASCRIPT FUNDAMENTALS
 // Calculator + Grade Tracker
-// Author: Lucy Wachu
 // =========================
 
 
@@ -41,7 +40,17 @@ function divide(a, b) {
     return a / b;
 }
 
-// Main calculator function
+// NEW (FIXED PART)
+function modulus(a, b) {
+    return a % b;
+}
+
+function power(a, b) {
+    return a ** b;
+}
+
+
+// MAIN CALCULATOR FUNCTION
 function calculate(num1, operator, num2) {
     switch (operator) {
         case "+":
@@ -52,6 +61,10 @@ function calculate(num1, operator, num2) {
             return multiply(num1, num2);
         case "/":
             return divide(num1, num2);
+        case "%":
+            return modulus(num1, num2);
+        case "**":
+            return power(num1, num2);
         default:
             return "Invalid operator";
     }
@@ -62,18 +75,20 @@ function calculate(num1, operator, num2) {
 // CALCULATOR TESTS
 // =========================
 
-console.log("Calculator Tests:");
-console.log(calculate(10, "+", 5));  // 15
-console.log(calculate(20, "-", 8));  // 12
-console.log(calculate(6, "*", 3));   // 18
-console.log(calculate(10, "/", 2));  // 5
+console.log("🧮 Calculator Tests:");
+console.log(calculate(10, "+", 5));
+console.log(calculate(20, "-", 8));
+console.log(calculate(6, "*", 3));
+console.log(calculate(10, "/", 2));
+console.log(calculate(10, "/", 0));
+console.log(calculate(10, "%", 3));
+console.log(calculate(2, "**", 3));
 
 
 // =========================
 // GRADE TRACKER
 // =========================
 
-// Function to determine grade
 function getGrade(score) {
     if (score >= 80) {
         return "A";
@@ -93,8 +108,34 @@ function getGrade(score) {
 // GRADE TRACKER TESTS
 // =========================
 
-console.log("Grade Tracker Tests:");
+console.log("🎓 Grade Tracker Tests:");
 console.log("85 →", getGrade(85));
 console.log("72 →", getGrade(72));
 console.log("60 →", getGrade(60));
 console.log("45 →", getGrade(45));
+
+// =========================
+// ARRAY OF OBJECTS (BASIC DEMO)
+// =========================
+
+const students = [
+    { name: "Alice", grade: 85 },
+    { name: "Bob", grade: 72 },
+    { name: "Charlie", grade: 90 }
+];
+
+// Get all names
+const names = students.map(student => student.name);
+console.log("Names:", names);
+
+// Get students above 80
+const highAchievers = students.filter(student => student.grade > 80);
+console.log("High Achievers:", highAchievers);
+
+// Find Charlie
+const charlie = students.find(student => student.name === "Charlie");
+console.log("Charlie:", charlie);
+
+// Average grade
+const avgGrade = students.reduce((sum, student) => sum + student.grade, 0) / students.length;
+console.log("Average Grade:", avgGrade);

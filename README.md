@@ -1,55 +1,51 @@
-# JavaScript Fundamentals - Week 4
+# Week 04: JavaScript Fundamentals
 
-**Repository:** `iyf-s10-week-04-lucywachu77-dev`  
-**Author:** Lucy Wachu  
-
-This project demonstrates core **JavaScript concepts** including variables, data types, operators, functions, control flow, loops, arrays, and objects. It also includes mini-projects to practice these skills.
-
----
-
-## Lessons & Tasks
-
-### Lesson 7: JavaScript Basics
-- Task 7.1: Variables & Data Types  
-- Task 7.2: Operators & Calculations  
-- Task 7.3: Functions (declaration, expression, arrow, default parameters)  
-- Task 7.4: Control Flow (if/else, switch, loops)  
-- Mini-Project: Calculator  
-
-### Lesson 8: Arrays, Objects & Data Manipulation
-- Task 8.1: Arrays & Array Methods  
-- Task 8.2: Objects & Object Methods  
-- Task 8.3: Array of Objects  
-- Mini-Project: Student Grade Tracker  
+## Author
+- **Name:** Lucy Wachu
+- **GitHub:** [@lucywachu77-dev](https://github.com/lucywachu77-dev)
+- **Date:** April 13, 2026
 
 ---
 
-## Mini Projects
+## Project Description
+This project is part of Week 4 JavaScript Fundamentals. It demonstrates core JavaScript concepts including variables, data types, functions, control flow, arrays, objects, and algorithm building. It also includes two mini-projects: a calculator and a student grade tracker.
 
-### Calculator
-- Functions: add, subtract, multiply, divide  
-- Main calculate function supports operators: `+`, `-`, `*`, `/`, `%`, `**`  
-- Handles division by zero  
+---
 
-### Student Grade Tracker
-- Add, retrieve, and manage student grades  
-- Calculate student averages  
-- Identify top performers  
+## Technologies Used
+- HTML5
+- JavaScript (ES6)
+- Git & GitHub
+- VS Code
+
+---
+
+## Features
+- JavaScript variables and data types practice
+- Mathematical operations and operators
+- String manipulation
+- Functions (declaration, expression, arrow functions)
+- Control flow (if/else, switch statements)
+- Loops (for, while, for...of)
+- Arrays and array methods (map, filter, reduce)
+- Objects and object methods
+- Calculator mini-project
+- Student Grade Tracker system
+
+## Project Structure
+
+```text
+iyf-s10-week-04-lucywachu77-dev/
+├── index.html        # Main entry point to run the project
+├── main.js           # JavaScript logic (calculator & grade tracker)
+├── README.md         # Project documentation
 
 ---
 
 ## How to Run
-1. Open `index.html` in a browser  
-2. Open the console to see JavaScript output  
-3. Or run `.js` files using Node.js  
 
----
+### Option 1: Open in Browser (Easiest)
 
-## Week 4 Checklist
-- [x] Variables & constants (`let`, `const`)  
-- [x] Data types: string, number, boolean, array, object  
-- [x] Functions (declaration, expression, arrow)  
-- [x] Control flow: if/else, switch, loops  
-- [x] Arrays and objects  
-- [x] Mini-projects completed: Calculator & Grade Tracker  
-- [x] Daily practice exercises completed
+1. Clone the repository:
+```bash
+git clone https://github.com/lucywachu77-dev/iyf-s10-week-04-lucywachu77-dev.git
